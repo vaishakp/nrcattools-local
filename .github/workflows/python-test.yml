@@ -52,7 +52,7 @@ jobs:
             ls
             # Pull waveformtools
             cd ..
-            git clone git@gitlab.com:vaishakp/waveformtools
+            git clone https://gitlab.com/vaishakp/waveformtools.git
             cd waveformtools
             ls
             export WTOOLS_DIR=$PWD

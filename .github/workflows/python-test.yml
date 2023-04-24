@@ -53,6 +53,7 @@ jobs:
             # Pull waveformtools
             cd ..
             git clone https://gitlab.com/vaishakp/waveformtools.git
+            pip install termcolor
             cd waveformtools
             ls
             export WTOOLS_DIR=$PWD

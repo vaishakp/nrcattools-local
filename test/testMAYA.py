@@ -59,7 +59,7 @@ f_lower_at_1MSUN = f_lower/M
 
 #sc = sxs.Catalog.load(download=True)
 #rc = RITCatalog.load(verbosity=5, download=True)
-message('Loading waveform through nrcatalogtools...')
+message('Loading a GT waveform through nrcatalogtools...')
 mc = MayaCatalog.load(verbosity=5)
 
 mwf = mc.get(sim_name)
@@ -165,7 +165,7 @@ S1, S2 = TransformSpinsNRtoLAL(s1, s2, params['nhat'], params['lnhat'])
 from pycbc.waveform import get_td_waveform
 
 
-message('Loading waveform through LAL...')
+message('Loading GT waveform through LAL...')
 hp2, hx2 = get_td_waveform(approximant='NR_hdf5',
                          numrel_data=file,
                          mass1=params['mass1'],

@@ -10,7 +10,7 @@
 ## GT waveforms
 
 1. GT waveforms are tested against LAL NR data injection infrastructure.
-2. This uses the SEOBNRv4 ROM which is a part of the [lalsuite-extra]() repository.
+2. This uses the SEOBNRv4 ROM which is a part of the [lalsuite-extra](https://git.ligo.org/lscsoft/lalsuite-extra) repository.
 3. The ROM file being>300MB, needs to be accessible to the runners used in testing.
     1. It is infeasible to use git lfs since there is a bandwidth limit of 1GB.
     2. Presently, this is being downloaded inside the runner.

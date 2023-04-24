@@ -34,6 +34,8 @@ jobs:
             pwd
             ls -l
             pip install -r requirements.txt
+            export NRC_DIR=${PWD}
+            echo $NRC_DIR
             cd ./test
             pwd
             ls
@@ -44,10 +46,20 @@ jobs:
             ls
             git lfs pull
             #wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
-            cd ../../../../../
-            ls
+            #cd ../../../../../
+            cd $NRC_DIR
             pwd
             ls
+            # Pull waveformtools
+            cd ..
+            git clone git@gitlab.com:vaishakp/waveformtools
+            cd waveformtools
+            ls
+            export WTOOLS_DIR=$PWD
+            echo $WTOOLS_DIR
+            export PYTHONPATH="$WTOOLS_DIR":$PYTHONPATH
+            echo $PYTHONPATH
+            cd $NRC_DIR/test
             python -m unittest -v
       - name: Upload logs
         uses: actions/upload-artifact@v3

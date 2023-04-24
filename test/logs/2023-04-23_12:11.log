@@ -1,6 +1,0 @@
-
-/home/vaishakprasad/Documents/Codes/nr-catalog-tools/test/testMAYA.py:58	Loading waveform through nrcatalogtools...
-
-/home/vaishakprasad/Documents/Codes/nr-catalog-tools/test/testMAYA.py:154	Cannot find the attribute `coa_phase` in the file. Setting to 0.7853981633974483
-
-/home/vaishakprasad/Documents/Codes/nr-catalog-tools/test/testMAYA.py:170	Loading waveform through LAL...

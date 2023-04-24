@@ -44,8 +44,8 @@ jobs:
             mkdir -p $LAL_DATA_PATH
             cd $LAL_DATA_PATH
             ls
-            git lfs pull
-            #wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
+            #git lfs pull
+            wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
             #cd ../../../../../
             cd $NRC_DIR
             pwd

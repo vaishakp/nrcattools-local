@@ -39,6 +39,12 @@ jobs:
             ls
             export LAL_DATA_PATH="${PWD}/test_data/lalsuite/lalsuite-extra/data/lalsimulation"
             echo $LAL_DATA_PATH
+            mkdir -p $LAL_DATA_PATH
+            cd $LAL_DATA_PATH
+            wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
+            cd ../../../../../
+            pwd
+            ls
             python -m unittest -v
       - name: Upload logs
         uses: actions/upload-artifact@v3

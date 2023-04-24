@@ -9,6 +9,8 @@ import h5py
 
 # nr-catalog-tools
 cwd = os.getcwd()
+from pathlib import Path
+home = Path.home()
 
 libpath = f'{cwd}/../'
 
@@ -90,8 +92,7 @@ h1 = hp1 + 1j*hx1
 # Fetch waveform using waveformtools
 #########################################
 
-
-fdir = "/home/runner/.cache/sxs/SXS:BBH:0001v3/Lev5"
+fdir = f"{home}/.cache/sxs/SXS:BBH:0001v3/Lev5"
 fname = 'rhOverM_Asymptotic_GeometricUnits_CoM.h5'
 
 message('Loading SXS waveform through waveformtools...')

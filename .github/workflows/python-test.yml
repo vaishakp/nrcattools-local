@@ -41,8 +41,11 @@ jobs:
             echo $LAL_DATA_PATH
             mkdir -p $LAL_DATA_PATH
             cd $LAL_DATA_PATH
-            wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
+            ls
+            git lfs pull
+            #wget https://git.ligo.org/lscsoft/lalsuite-extra/-/raw/master/data/lalsimulation/SEOBNRv4ROM_v2.0.hdf5
             cd ../../../../../
+            ls
             pwd
             ls
             python -m unittest -v

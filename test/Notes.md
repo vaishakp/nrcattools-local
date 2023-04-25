@@ -3,7 +3,7 @@
 ## SXS waveforms
 
 1. SXS waveforms are tested against [waveformtools](https://gitlab.com/vaishakp/waveformtools)
-2. **waveformtools** loads in SpEC data using the package **scri**.
+2. **waveformtools** loads in SpEC data.
     1. It then stores it in its own `modes_array`. 
     2. Given extrinsic parameters, evaluates the waveform using a native implementaion.
 
